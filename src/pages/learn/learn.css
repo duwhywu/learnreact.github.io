@@ -1,0 +1,22 @@
+/* learn.css */
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-weight: bold;
+}
+
+p {
+  color: #666;
+  line-height: 1.6;
+}
+
+ul, ol {
+  margin-left: 20px;
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+/* 更多样式可以根据需要添加 */
