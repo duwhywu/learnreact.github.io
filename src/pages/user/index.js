@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Button, Form, Input, Table, Popconfirm, Modal, InputNumber, Select, DatePicker } from "antd";
 import "./user.css";
 import { getUser, addUser, editUser, delUser } from "../../api";
-import { render } from "vue";
-import { columns } from "element-plus/es/components/table-v2/src/common.mjs";
 import dayjs from "dayjs";
-import { useFilter } from "element-plus/es/components/tree-v2/src/composables/useFilter.mjs";
 
 
 const User = () => {
