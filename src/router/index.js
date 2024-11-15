@@ -6,9 +6,13 @@ import User from "../pages/user"
 import PageOne from "../pages/other/pageOne"
 import PageTwo from "../pages/other/pageTwo"
 import Login from "../pages/login"
-import Learn from "../pages/learn"
+import Learnmd from "../pages/learn/md"
+import LearnFlex from "../pages/learn/flex"
+import LearnGrid from "../pages/learn/grid"
 import Plugin1 from "../pages/plugin/plugin1"
+import Plugin2 from "../pages/plugin/plugin2"
 
+import Threejs1 from "../pages/threejs/threejs1"
 const routes = [
     {
         path: '/',
@@ -47,10 +51,19 @@ const routes = [
             },
             {
                 path: 'learn',
-                Component: Learn,
+                // Component: Learn,
                 children: [
                     {
-
+                        path: 'learnmd',
+                        Component: Learnmd
+                    },
+                    {
+                        path: 'learnflex',
+                        Component: LearnFlex
+                    },
+                    {
+                        path: 'learngrid',
+                        Component: LearnGrid
                     }
                 ]
             },
@@ -60,6 +73,19 @@ const routes = [
                     {
                         path: 'plugin1',
                         Component: Plugin1
+                    },
+                    {
+                        path: 'plugin2',
+                        Component: Plugin2
+                    }
+                ]
+            },
+            {
+                path: '/threejs',
+                children: [
+                    {
+                        path: 'threejs1',
+                        Component: Threejs1
                     },
                     // {
                     //     path: 'pageTwo',

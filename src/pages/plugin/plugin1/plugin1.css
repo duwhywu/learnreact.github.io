@@ -7,7 +7,7 @@
   .Plugin1 {
     background: hsl(55, 100%, 65%);
     width: 100%;
-    height: 100%;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;

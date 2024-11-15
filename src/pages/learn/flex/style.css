@@ -1,0 +1,54 @@
+.learnFlex h1{
+    font-size: 35px;
+}
+
+.learnFlex .a{
+    color: gray;
+    margin:5px 0px 5px 0px;
+}
+.learnFlex .a:hover{
+    color: red;
+}
+
+.learnFlex h2{
+    font-size:20px;
+}
+.learnFlex table{
+    margin: 5px 0px 5px 0px;
+    height:150px;
+    text-align:center;
+    font-size: 15px;
+    /* border: 1px solid #000; */
+}
+.learnFlex th{
+    font-size: 20px;
+    font-weight: 800;
+}
+.learnFlex th,.learnFlex td{
+    border: 1px solid #000;
+}
+
+.learnFlex .flexBox{
+    margin-top: 10px;
+}
+.learnFlex .flexItem1,.learnFlex .flexItem2,.learnFlex .flexItem3{
+    width: 100px;
+    height: 100px;
+    
+}
+.learnFlex .flexItem1{
+    background-color: red;
+
+}
+.learnFlex .flexItem2{
+    background-color: yellow;
+
+}
+.learnFlex .flexItem3{
+    background-color: blue;
+
+}
+.Modals{
+    height: 100%;
+    width: 100%;
+}

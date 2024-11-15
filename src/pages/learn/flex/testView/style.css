@@ -1,0 +1,32 @@
+
+.container4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-self: center;
+}
+
+.container4 .flexBox{
+    margin-top: 10px;
+    width: 451px;
+    height: 451px;
+    /* 这里要减去边框宽度 */
+    border: 1px solid #000;
+}
+/* .container4 .Item1,.container4 .Item2,.container4 .Item3{
+    width: 100px;
+    height: 100px;
+    
+} */
+.container4 .Item1{
+    background-color: red;
+
+}
+.container4 .Item2{
+    background-color: yellow;
+
+}
+.container4 .Item3{
+    background-color: blue;
+
+}

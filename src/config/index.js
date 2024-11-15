@@ -43,18 +43,57 @@ export default [
         path: '/learn',
         name: 'learn',
         label: '学习资料',
-        icon: 'UserOutlined',
-        url: '/learn/index'
+        icon: 'BulbOutlined',
+        // url: '/learn/index',
+        children: [
+            {
+                path: '/learn/learnmd',
+                name: 'learnmd',
+                label: 'MD文件展示',
+                icon: 'SettingOutlined'
+            },
+            {
+                path: '/learn/learnflex',
+                name: 'learnflex',
+                label: 'Flex布局',
+                icon: 'SettingOutlined'
+            },
+            {
+                path: '/learn/learngrid',
+                name: 'learngrid',
+                label: 'Grid布局',
+                icon: 'SettingOutlined'
+            }
+        ]
     },
     {
         path: '/plugin',
         label: '插件组件',
-        icon: 'UserOutlined',
+        icon: 'TagOutlined',
         children: [
             {
                 path: '/plugin/plugin1',
                 name: 'plugin1',
                 label: '插件1',
+                icon: 'SettingOutlined'
+            },
+            {
+                path: '/plugin/plugin2',
+                name: 'plugin2',
+                label: '插件2',
+                icon: 'SettingOutlined'
+            }
+        ]
+    },
+    {
+        path: '/threejs',
+        label: 'threejs组件',
+        icon: 'SmileOutlined',
+        children: [
+            {
+                path: '/threejs/threejs1',
+                name: 'threejs1',
+                label: 'threejs实例1',
                 icon: 'SettingOutlined'
             },
             // {

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Markdown from 'react-markdown';
 import 'markdown-navbar/dist/navbar.css';
 import './learn.css';
-import md from '../../file/md/flex补充.md'
+import md from '../../../file/md/react补充.md'
 
 // 要遍历并显示 ../../file/md 目录下的所有 Markdown 文件，你可以使用 Webpack 的 require.context 来动态导入目录中的所有 .md 文件。
 // JavaScript 原生不支持直接读取目录中的文件，但 Webpack 可以帮忙在编译时将文件打包进来。

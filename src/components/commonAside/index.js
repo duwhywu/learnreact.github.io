@@ -1,11 +1,6 @@
 import React from 'react'
 import MenuConfig from '../../config'
 import * as Icon from "@ant-design/icons"
-import {
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-} from '@ant-design/icons';
 import { Layout, Menu } from 'antd';
 import { useNavigate } from 'react-router-dom'
 import { useDispatch } from 'react-redux'
@@ -63,7 +58,6 @@ const CommonAside = ({ collapsed }) => {
                     })
                 }
             }
-
         })
         setTabsList({
             path: data.path,

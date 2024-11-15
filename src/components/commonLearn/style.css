@@ -1,0 +1,23 @@
+.learnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background-color: yellow;
+    margin-top: 10px;
+}
+
+.learnContainer .learnBox{
+    height: 450px;
+    width: 450px;
+    border: 1px solid #000;
+}
+/* .ArrayBox{
+    height: 100px;
+    width: 100px;
+} */
+
+.learnHeader{
+    display: flex;
+}
