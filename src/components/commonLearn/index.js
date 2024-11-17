@@ -114,7 +114,7 @@ const commonLearnComp = ({ boxObj, itemObj }) => {
                 />
                 <InputNumber
                     defaultValue="设置盒子大小"
-                    max={150}
+                    max={450}
                     min={0}
                     style={{ width: 110, marginRight: '10px' }}
                     onChange={handleChangeBOX}

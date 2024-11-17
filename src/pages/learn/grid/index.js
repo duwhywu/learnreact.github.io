@@ -21,6 +21,9 @@ function learnFlex() {
     return (
         <div>
             <h1>grid概述</h1>
+            <div className='learnFlex_a'>
+                <a href='https://blog.csdn.net/leilei__66/article/details/122360901'>csdn资料</a>
+            </div>
             <p>grid布局，也叫网格布局，是一种将页面分割成多栏或者多行，然后放入元素来填充整个网格的布局方式。</p>
             <img src="https://cdn.beekka.com/blogimg/asset/201903/1_bg2019032501.png"></img>
             <p>
@@ -30,7 +33,7 @@ function learnFlex() {
             <Button type='primary' onClick={() => showModal()}>打开一个测试窗口</Button>
             <div>
                 <Modal className='GridModals' title="Grid测试" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
-                    <CommonLearnComp boxObj={GridBoxStyle} itemObj={GridItemStyle}></CommonLearnComp>
+                    <CommonLearnComp boxObj={GridBoxStyle} itemObj={GridItemStyle} ></CommonLearnComp>
                 </Modal>
             </div>
         </div >
