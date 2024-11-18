@@ -16,6 +16,7 @@ const Threejs1 = () => {
 
         // 确保 ref 被正确绑定
         const container = mountRef.current;
+        console.log('mountRef.current:', container);
         if (!container) {
             console.error('Container ref is null');
             return;

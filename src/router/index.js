@@ -1,3 +1,4 @@
+import React, { Suspense } from "react";
 import { createBrowserRouter, Navigate } from "react-router-dom"
 import Main from "../pages/main"
 import Home from "../pages/home"
@@ -11,8 +12,8 @@ import LearnFlex from "../pages/learn/flex"
 import LearnGrid from "../pages/learn/grid"
 import Plugin1 from "../pages/plugin/plugin1"
 import Plugin2 from "../pages/plugin/plugin2"
-
-import Threejs1 from "../pages/threejs/threejs1"
+const Threejs1 = React.lazy(() => import('../pages/threejs/threejs1')) // threejs文件使用懒加载进行处理
+// import Threejs1 from "../pages/threejs/threejs1"
 const routes = [
     {
         path: '/',
@@ -85,7 +86,11 @@ const routes = [
                 children: [
                     {
                         path: 'threejs1',
-                        Component: Threejs1
+                        element: (
+                            <Suspense fallback={<div>Loading...</div>}>
+                                <Threejs1 />
+                            </Suspense>
+                        )
                     },
                     // {
                     //     path: 'pageTwo',
